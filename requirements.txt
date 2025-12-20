@@ -1,0 +1,15 @@
+# MiniMax-M2.1 Exploration Project Dependencies
+
+# OpenAI SDK for API compatibility
+openai>=1.0.0
+
+# Environment management
+python-dotenv>=1.0.0
+
+# Jupyter notebooks
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# Optional: For enhanced notebook experience
+ipywidgets>=8.0.0
+
