@@ -14,7 +14,7 @@ from openai import OpenAI
 class MiniMaxClient:
     """Client for interacting with MiniMax API using OpenAI-compatible interface."""
 
-    DEFAULT_BASE_URL = "https://api.minimaxi.com/v1"
+    DEFAULT_BASE_URL = "https://api.minimax.io/v1"
     DEFAULT_MODEL = "MiniMax-M2.1"
 
     def __init__(
@@ -172,4 +172,3 @@ class MiniMaxClient:
 def get_client(**kwargs) -> MiniMaxClient:
     """Get a configured MiniMax client instance."""
     return MiniMaxClient(**kwargs)
-
