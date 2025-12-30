@@ -3,6 +3,9 @@
 # OpenAI SDK for API compatibility
 openai>=1.0.0
 
+# Anthropic SDK for Claude models
+anthropic>=0.18.0
+
 # Environment management
 python-dotenv>=1.0.0
 
@@ -12,4 +15,7 @@ ipykernel>=6.0.0
 
 # Optional: For enhanced notebook experience
 ipywidgets>=8.0.0
+
+# Optional: For comparison tables
+pandas>=2.0.0
 

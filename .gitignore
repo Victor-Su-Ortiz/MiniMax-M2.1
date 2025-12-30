@@ -54,3 +54,8 @@ logs/
 .coverage
 htmlcov/
 
+# Next.js projects in notebooks/projects/
+notebooks/projects/**/node_modules/
+notebooks/projects/**/.next/
+notebooks/projects/**/out/
+notebooks/projects/**/.vercel/

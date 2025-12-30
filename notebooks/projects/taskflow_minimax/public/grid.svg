@@ -1,0 +1,1 @@
+(You can create a simple SVG grid pattern or just remove the `bg-[url('/grid.svg')]` class in layout.tsx if you don't want to create the file)
