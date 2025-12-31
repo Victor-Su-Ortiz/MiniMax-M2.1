@@ -1,0 +1,9 @@
+notebook,benchmark,type,score,pass_rate,tests,notes
+capabilities,capabilities,qualitative,-,-,11,"reasoning_logic; code_generation; creative_writing; math_calculations; multi_turn_coherence"
+parameters,parameters,qualitative,-,-,12,""
+model_comparison,model_comparison,comparison,-,-,2,"vs OpenAI, MiniMax"
+nextjs_comparison,nextjs_comparison,comparison,-,-,2,"vs OpenAI, MiniMax"
+code_correctness,code_correctness,quantitative,95.0,90.0,10,
+instruction_following,instruction_following,quantitative,78.3,66.7,12,
+reasoning_quality,reasoning_quality,quantitative,50.0,40.0,10,
+OVERALL,composite,quantitative,74.4,-,55,

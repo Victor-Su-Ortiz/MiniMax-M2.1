@@ -1,0 +1,75 @@
+{
+  "notebook": "03_parameters_tuning",
+  "timestamp": "2025-12-30T16:55:26.842097",
+  "model": "MiniMax-M2.1",
+  "summary": {
+    "parameters_tested": 4,
+    "total_experiments": 12
+  },
+  "experiments": {
+    "temperature": {
+      "values_tested": [
+        0.1,
+        0.5,
+        0.9
+      ],
+      "description": "Controls randomness of outputs",
+      "findings": {
+        "low": "More focused, deterministic responses",
+        "high": "More varied, creative outputs"
+      }
+    },
+    "top_p": {
+      "values_tested": [
+        0.1,
+        0.5,
+        0.95
+      ],
+      "description": "Nucleus sampling threshold",
+      "findings": {
+        "low": "Restricts to most probable tokens",
+        "high": "Allows more token diversity"
+      }
+    },
+    "max_tokens": {
+      "values_tested": [
+        50,
+        150,
+        500
+      ],
+      "description": "Maximum output length",
+      "findings": {
+        "low": "Truncated responses, may cut off mid-thought",
+        "high": "Complete, detailed responses"
+      }
+    },
+    "system_prompts": {
+      "personas_tested": [
+        "Concise Expert",
+        "Friendly Teacher",
+        "Pirate"
+      ],
+      "description": "Model behavior customization",
+      "findings": "Model adapts tone and style to persona effectively"
+    }
+  },
+  "recommended_settings": {
+    "code_generation": {
+      "temperature": 0.2,
+      "top_p": 0.9
+    },
+    "creative_writing": {
+      "temperature": 0.9,
+      "top_p": 0.95
+    },
+    "factual_qa": {
+      "temperature": 0.1,
+      "top_p": 0.8
+    }
+  },
+  "observations": {
+    "temperature_impact": "Higher temperatures produce more varied outputs across runs",
+    "top_p_impact": "Lower top_p values produce more predictable token selection",
+    "persona_adherence": "Model successfully adopts different communication styles"
+  }
+}

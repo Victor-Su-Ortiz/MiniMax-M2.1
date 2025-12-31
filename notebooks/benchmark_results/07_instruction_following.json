@@ -1,0 +1,259 @@
+{
+  "notebook": "07_instruction_following",
+  "timestamp": "2025-12-30T17:03:57.966270",
+  "summary": {
+    "pass_rate": 66.66666666666666,
+    "avg_score": 78.33333333333333,
+    "constraint_adherence": 68.42105263157895,
+    "total": 12,
+    "passed": 8
+  },
+  "tests": [
+    {
+      "name": "JSON Output Only",
+      "passed": true,
+      "score": 100.0,
+      "constraints": 1,
+      "total_constraints": 1,
+      "constraint_results": [
+        {
+          "name": "JSON-only",
+          "passed": true,
+          "expected": "Valid JSON, no extra text",
+          "actual": "JSON valid, extra text: False"
+        }
+      ],
+      "time": 5.120809874963015,
+      "tokens": 520
+    },
+    {
+      "name": "Word Count ~50",
+      "passed": false,
+      "score": 0.0,
+      "constraints": 0,
+      "total_constraints": 1,
+      "constraint_results": [
+        {
+          "name": "~50 words",
+          "passed": false,
+          "expected": "42-57 words",
+          "actual": "0 words"
+        }
+      ],
+      "time": 10.279783417005092,
+      "tokens": 1024
+    },
+    {
+      "name": "Must Include Terms",
+      "passed": true,
+      "score": 100.0,
+      "constraints": 1,
+      "total_constraints": 1,
+      "constraint_results": [
+        {
+          "name": "Must include",
+          "passed": true,
+          "expected": "Include: ['neural network', 'training data', 'prediction', 'algorithm']",
+          "actual": "All present"
+        }
+      ],
+      "time": 13.987567167030647,
+      "tokens": 767
+    },
+    {
+      "name": "Must NOT Include",
+      "passed": true,
+      "score": 100.0,
+      "constraints": 1,
+      "total_constraints": 1,
+      "constraint_results": [
+        {
+          "name": "Must NOT include",
+          "passed": true,
+          "expected": "Exclude: ['water', 'hot', 'cup', 'drink']",
+          "actual": "None found"
+        }
+      ],
+      "time": 10.460230166092515,
+      "tokens": 1024
+    },
+    {
+      "name": "Markdown Required",
+      "passed": true,
+      "score": 100.0,
+      "constraints": 1,
+      "total_constraints": 1,
+      "constraint_results": [
+        {
+          "name": "Markdown format",
+          "passed": true,
+          "expected": "Use markdown",
+          "actual": "3 features found"
+        }
+      ],
+      "time": 12.037006458966061,
+      "tokens": 1024
+    },
+    {
+      "name": "Code Only",
+      "passed": true,
+      "score": 100.0,
+      "constraints": 1,
+      "total_constraints": 1,
+      "constraint_results": [
+        {
+          "name": "Code-only",
+          "passed": true,
+          "expected": "No explanation",
+          "actual": "Code only"
+        }
+      ],
+      "time": 3.988795292098075,
+      "tokens": 290
+    },
+    {
+      "name": "Exactly 5 List Items",
+      "passed": true,
+      "score": 100.0,
+      "constraints": 1,
+      "total_constraints": 1,
+      "constraint_results": [
+        {
+          "name": "Exactly 5 items",
+          "passed": true,
+          "expected": "5 items",
+          "actual": "5 items"
+        }
+      ],
+      "time": 4.196077124914154,
+      "tokens": 385
+    },
+    {
+      "name": "No Code Blocks",
+      "passed": true,
+      "score": 100.0,
+      "constraints": 1,
+      "total_constraints": 1,
+      "constraint_results": [
+        {
+          "name": "No code blocks",
+          "passed": true,
+          "expected": "No ```",
+          "actual": "No code"
+        }
+      ],
+      "time": 21.098104415927082,
+      "tokens": 1024
+    },
+    {
+      "name": "Multi: JSON + Include",
+      "passed": false,
+      "score": 50.0,
+      "constraints": 1,
+      "total_constraints": 2,
+      "constraint_results": [
+        {
+          "name": "JSON-only",
+          "passed": false,
+          "expected": "Valid JSON, no extra text",
+          "actual": "JSON valid, extra text: True"
+        },
+        {
+          "name": "Must include",
+          "passed": true,
+          "expected": "Include: ['name', 'email', 'age']",
+          "actual": "All present"
+        }
+      ],
+      "time": 1.7447347501292825,
+      "tokens": 89
+    },
+    {
+      "name": "Multi: List + Word Limit",
+      "passed": false,
+      "score": 50.0,
+      "constraints": 1,
+      "total_constraints": 2,
+      "constraint_results": [
+        {
+          "name": "Exactly 3 items",
+          "passed": true,
+          "expected": "3 items",
+          "actual": "3 items"
+        },
+        {
+          "name": "~60 words",
+          "passed": false,
+          "expected": "42-78 words",
+          "actual": "35 words"
+        }
+      ],
+      "time": 10.459187750006095,
+      "tokens": 928
+    },
+    {
+      "name": "Complex: 5 Constraints",
+      "passed": false,
+      "score": 40.0,
+      "constraints": 2,
+      "total_constraints": 5,
+      "constraint_results": [
+        {
+          "name": "Markdown format",
+          "passed": false,
+          "expected": "Use markdown",
+          "actual": "0 features found"
+        },
+        {
+          "name": "Must include",
+          "passed": false,
+          "expected": "Include: ['readability', 'versatile']",
+          "actual": "Missing: ['readability', 'versatile']"
+        },
+        {
+          "name": "Must NOT include",
+          "passed": true,
+          "expected": "Exclude: ['Java']",
+          "actual": "None found"
+        },
+        {
+          "name": "~80 words",
+          "passed": false,
+          "expected": "56-104 words",
+          "actual": "0 words"
+        },
+        {
+          "name": "No code blocks",
+          "passed": true,
+          "expected": "No ```",
+          "actual": "No code"
+        }
+      ],
+      "time": 10.002455542096868,
+      "tokens": 1024
+    },
+    {
+      "name": "Negative: No Loops",
+      "passed": true,
+      "score": 100.0,
+      "constraints": 2,
+      "total_constraints": 2,
+      "constraint_results": [
+        {
+          "name": "Must NOT include",
+          "passed": true,
+          "expected": "Exclude: ['for ', 'while ']",
+          "actual": "None found"
+        },
+        {
+          "name": "Must include",
+          "passed": true,
+          "expected": "Include: ['sum']",
+          "actual": "All present"
+        }
+      ],
+      "time": 2.0465110829100013,
+      "tokens": 182
+    }
+  ]
+}

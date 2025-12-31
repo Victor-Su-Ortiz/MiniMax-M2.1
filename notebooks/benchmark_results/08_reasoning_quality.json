@@ -1,0 +1,198 @@
+{
+  "notebook": "08_reasoning_quality",
+  "timestamp": "2025-12-30T17:05:46.483836",
+  "summary": {
+    "accuracy": 40.0,
+    "avg_score": 50.0,
+    "avg_reasoning_steps": 22.0,
+    "self_correction_rate": 50.0,
+    "reasoning_metrics": {
+      "Self-Correction": 5,
+      "Alternatives": 6,
+      "Edge Cases": 4,
+      "Verification": 5
+    }
+  },
+  "tests": [
+    {
+      "name": "River Crossing",
+      "correct": false,
+      "score": 40.0,
+      "reasoning": {
+        "thinking_length": 6390,
+        "step_count": 57,
+        "has_self_correction": true,
+        "considers_alternatives": true,
+        "mentions_edge_cases": false,
+        "shows_verification": true
+      },
+      "thinking_preview": "Got it, let's try to figure this out step by step. First, let's list the entities: Farmer (F), Wolf (W), Goat (G), Cabbage (C). The key constraints are:\n\n1. F must be in the boat every time (since som",
+      "answer": "",
+      "expected": "goat",
+      "time": 23.846778167178854,
+      "tokens": 2048
+    },
+    {
+      "name": "Knights and Knaves",
+      "correct": true,
+      "score": 80.0,
+      "reasoning": {
+        "thinking_length": 2033,
+        "step_count": 16,
+        "has_self_correction": false,
+        "considers_alternatives": true,
+        "mentions_edge_cases": false,
+        "shows_verification": true
+      },
+      "thinking_preview": "We need to parse the problem. The problem: \"On an island, knights always tell truth, knaves always lie. Person A says 'We are both knaves.' What are A and B?\" The typical puzzle: There are two people ",
+      "answer": "**Reasoning**\n\n1. Let A\u2019s statement be \\(S\\): \u201cWe are both knaves.\u201d  \n2. If A were a **knight**, the",
+      "expected": "knave",
+      "time": 12.30989170819521,
+      "tokens": 739
+    },
+    {
+      "name": "Simple Algebra",
+      "correct": false,
+      "score": 10.0,
+      "reasoning": {
+        "thinking_length": 648,
+        "step_count": 6,
+        "has_self_correction": false,
+        "considers_alternatives": false,
+        "mentions_edge_cases": false,
+        "shows_verification": false
+      },
+      "thinking_preview": "The user asks: \"Solve for x: 2x + 5 = 13. Show your reasoning.\" Straightforward algebra. The solution: subtract 5 from both sides, get 2x = 8, then divide by 2 => x = 4. So answer: x = 4. Show reasoni",
+      "answer": "**Equation:**\u2003\\(2x + 5 = 13\\)\n\n**Goal:**\u2003Find the value of \\(x\\).\n\n---\n\n### Step 1: Isolate the term",
+      "expected": "4",
+      "time": 7.550814999965951,
+      "tokens": 421
+    },
+    {
+      "name": "Quadratic",
+      "correct": true,
+      "score": 90.0,
+      "reasoning": {
+        "thinking_length": 840,
+        "step_count": 7,
+        "has_self_correction": false,
+        "considers_alternatives": true,
+        "mentions_edge_cases": true,
+        "shows_verification": true
+      },
+      "thinking_preview": "Got it, let's see. I need to solve the quadratic equation x\u00b2 - 5x + 6 = 0. First, remember that quadratic equations can be solved by factoring if they are factorable. Let's try that. The general form ",
+      "answer": "To solve the quadratic equation \\(x^2 - 5x + 6 = 0\\), we can use **factoring** (since the quadratic ",
+      "expected": "2",
+      "time": 14.234557750169188,
+      "tokens": 950
+    },
+    {
+      "name": "Word Problem",
+      "correct": false,
+      "score": 30.0,
+      "reasoning": {
+        "thinking_length": 6707,
+        "step_count": 38,
+        "has_self_correction": false,
+        "considers_alternatives": true,
+        "mentions_edge_cases": false,
+        "shows_verification": true
+      },
+      "thinking_preview": "I have this problem: Train A leaves at 9 am going 60 mph. Train B leaves at 10 am from 300 miles away going 80 mph toward Train A. I need to find when they meet. Let's break this down.\n\nFirst, I shoul",
+      "answer": "",
+      "expected": "11:42",
+      "time": 24.298213792033494,
+      "tokens": 2048
+    },
+    {
+      "name": "Syllogism",
+      "correct": true,
+      "score": 90.0,
+      "reasoning": {
+        "thinking_length": 4135,
+        "step_count": 22,
+        "has_self_correction": true,
+        "considers_alternatives": true,
+        "mentions_edge_cases": true,
+        "shows_verification": false
+      },
+      "thinking_preview": "I have this problem: \"All roses are flowers. Some flowers fade quickly. Can we conclude some roses fade quickly?\" I need to explain my answer.\n\nFirst, I should think about this logically. It's like a ",
+      "answer": "No, we cannot conclude that some roses fade quickly based on the given statements. Here's a step-by-",
+      "expected": "no",
+      "time": 21.14168554195203,
+      "tokens": 1544
+    },
+    {
+      "name": "Set Logic",
+      "correct": false,
+      "score": 20.0,
+      "reasoning": {
+        "thinking_length": 1594,
+        "step_count": 12,
+        "has_self_correction": true,
+        "considers_alternatives": false,
+        "mentions_edge_cases": false,
+        "shows_verification": false
+      },
+      "thinking_preview": "Set A is {1,2,3,4,5} and set B is {4,5,6,7}. I need to find the intersection of A and B, which is A \u2229 B. The intersection of two sets includes only the elements that are in both sets.\n\nFirst, I'll lis",
+      "answer": "```json\n{\n    \"reasoning\": \"The intersection of two sets, denoted A \u2229 B, contains only the elements ",
+      "expected": "{4,5}",
+      "time": 12.602439540904015,
+      "tokens": 679
+    },
+    {
+      "name": "Big-O Complexity",
+      "correct": true,
+      "score": 100.0,
+      "reasoning": {
+        "thinking_length": 2492,
+        "step_count": 11,
+        "has_self_correction": true,
+        "considers_alternatives": true,
+        "mentions_edge_cases": true,
+        "shows_verification": true
+      },
+      "thinking_preview": "Got it, let's tackle this question about binary search time complexity. First, I need to remember what binary search does\u2014divide the sorted array in half each time. \n\nFirst, let's define the problem: ",
+      "answer": "To answer your question about binary search's time complexity, let's break down **what binary search",
+      "expected": "log",
+      "time": 16.391056957887486,
+      "tokens": 1572
+    },
+    {
+      "name": "Recursion Trace",
+      "correct": false,
+      "score": 10.0,
+      "reasoning": {
+        "thinking_length": 300,
+        "step_count": 4,
+        "has_self_correction": false,
+        "considers_alternatives": false,
+        "mentions_edge_cases": false,
+        "shows_verification": false
+      },
+      "thinking_preview": "We need to compute fib(5) using Fibonacci recurrence: fib(0)=0, fib(1)=1, fib(n)=fib(n-1)+fib(n-2). So fib(2)=1, fib(3)=2, fib(4)=3, fib(5)=5. So answer: 5.\n\nBut need to show step-by-step reasoning. S",
+      "answer": "The Fibonacci numbers are defined by  \n\n\\[\n\\begin{cases}\n\\text{fib}(0)=0,\\\\[2pt]\n\\text{fib}(1)=1,\\\\[",
+      "expected": "5",
+      "time": 3.408867333084345,
+      "tokens": 328
+    },
+    {
+      "name": "Edge Case Analysis",
+      "correct": false,
+      "score": 30.0,
+      "reasoning": {
+        "thinking_length": 8658,
+        "step_count": 47,
+        "has_self_correction": true,
+        "considers_alternatives": false,
+        "mentions_edge_cases": true,
+        "shows_verification": false
+      },
+      "thinking_preview": "We are considering a function that divides two numbers, say dividend and divisor.\n The edge cases to consider include:\n\n 1. Division by zero: If the divisor is zero, the operation is undefined. We mus",
+      "answer": "",
+      "expected": "zero",
+      "time": 23.610928166890517,
+      "tokens": 2048
+    }
+  ]
+}

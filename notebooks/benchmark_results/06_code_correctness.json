@@ -1,0 +1,267 @@
+{
+  "notebook": "06_code_correctness",
+  "timestamp": "2025-12-30T17:02:10.717833",
+  "summary": {
+    "pass_rate": 90.0,
+    "avg_score": 95.0,
+    "syntax_valid_rate": 100.0,
+    "total": 10,
+    "passed": 9
+  },
+  "by_language": {
+    "python": {
+      "passed": 2,
+      "total": 3,
+      "avg_score": 83.33333333333333
+    },
+    "typescript": {
+      "passed": 3,
+      "total": 3,
+      "avg_score": 100.0
+    },
+    "json": {
+      "passed": 2,
+      "total": 2,
+      "avg_score": 100.0
+    },
+    "sql": {
+      "passed": 2,
+      "total": 2,
+      "avg_score": 100.0
+    }
+  },
+  "tests": [
+    {
+      "name": "Python - Binary Search",
+      "passed": true,
+      "score": 100.0,
+      "details": {
+        "req_met": "2/2",
+        "errors": 0
+      },
+      "validation": {
+        "valid": true,
+        "language": "python",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "lines": 33,
+          "chars": 799,
+          "avg_complexity": 4.0,
+          "max_complexity": 4,
+          "maintainability": 85.91
+        }
+      },
+      "time": 4.824048959184438,
+      "tokens": 438
+    },
+    {
+      "name": "Python - Async HTTP",
+      "passed": true,
+      "score": 100.0,
+      "details": {
+        "req_met": "2/2",
+        "errors": 0
+      },
+      "validation": {
+        "valid": true,
+        "language": "python",
+        "errors": [],
+        "warnings": [
+          "<gen>:11:16: undefined name 'asyncio'"
+        ],
+        "metrics": {
+          "lines": 14,
+          "chars": 554,
+          "avg_complexity": 4.0,
+          "max_complexity": 4,
+          "maintainability": 100.0
+        }
+      },
+      "time": 5.0109935000073165,
+      "tokens": 452
+    },
+    {
+      "name": "Python - Dataclass",
+      "passed": false,
+      "score": 50.0,
+      "details": {
+        "req_met": "0/2",
+        "errors": 0
+      },
+      "validation": {
+        "valid": true,
+        "language": "python",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "lines": 1,
+          "chars": 0,
+          "maintainability": 100.0
+        }
+      },
+      "time": 21.40432466706261,
+      "tokens": 2048
+    },
+    {
+      "name": "TypeScript - React Component",
+      "passed": true,
+      "score": 100.0,
+      "details": {
+        "req_met": "2/2",
+        "errors": 0
+      },
+      "validation": {
+        "valid": true,
+        "language": "typescript",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "lines": 15,
+          "chars": 359,
+          "has_types": true,
+          "has_interfaces": true,
+          "uses_any": false
+        }
+      },
+      "time": 10.870208082953468,
+      "tokens": 1149
+    },
+    {
+      "name": "TypeScript - API Service",
+      "passed": true,
+      "score": 100.0,
+      "details": {
+        "req_met": "3/3",
+        "errors": 0
+      },
+      "validation": {
+        "valid": true,
+        "language": "typescript",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "lines": 38,
+          "chars": 1106,
+          "has_types": true,
+          "has_interfaces": false,
+          "uses_any": false
+        }
+      },
+      "time": 21.598896000068635,
+      "tokens": 1656
+    },
+    {
+      "name": "TypeScript - Custom Hook",
+      "passed": true,
+      "score": 100.0,
+      "details": {
+        "req_met": "2/2",
+        "errors": 0
+      },
+      "validation": {
+        "valid": true,
+        "language": "typescript",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "lines": 37,
+          "chars": 1052,
+          "has_types": true,
+          "has_interfaces": false,
+          "uses_any": false
+        }
+      },
+      "time": 15.508114832919091,
+      "tokens": 1457
+    },
+    {
+      "name": "JSON - User Profile",
+      "passed": true,
+      "score": 100.0,
+      "details": {
+        "req_met": "3/3",
+        "errors": 0
+      },
+      "validation": {
+        "valid": true,
+        "language": "json",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "chars": 272,
+          "type": "object",
+          "size": 5
+        }
+      },
+      "time": 3.6842145421542227,
+      "tokens": 343
+    },
+    {
+      "name": "JSON - Config File",
+      "passed": true,
+      "score": 100.0,
+      "details": {
+        "req_met": "2/2",
+        "errors": 0
+      },
+      "validation": {
+        "valid": true,
+        "language": "json",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "chars": 196,
+          "type": "object",
+          "size": 3
+        }
+      },
+      "time": 3.444407709175721,
+      "tokens": 362
+    },
+    {
+      "name": "SQL - Top Customers",
+      "passed": true,
+      "score": 100.0,
+      "details": {
+        "req_met": "3/3",
+        "errors": 0
+      },
+      "validation": {
+        "valid": true,
+        "language": "sql",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "lines": 15,
+          "has_where": false,
+          "has_join": true
+        }
+      },
+      "time": 4.643181749852374,
+      "tokens": 414
+    },
+    {
+      "name": "SQL - Create Table",
+      "passed": true,
+      "score": 100.0,
+      "details": {
+        "req_met": "2/2",
+        "errors": 0
+      },
+      "validation": {
+        "valid": true,
+        "language": "sql",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "lines": 7,
+          "has_where": false,
+          "has_join": false
+        }
+      },
+      "time": 13.445408167084679,
+      "tokens": 813
+    }
+  ]
+}

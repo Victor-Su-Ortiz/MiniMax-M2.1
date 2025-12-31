@@ -1,0 +1,139 @@
+{
+  "timestamp": "2025-12-30T17:08:28.675466",
+  "model": "MiniMax-M2.1",
+  "benchmarks": {
+    "capabilities": {
+      "categories_tested": 5,
+      "total_tests": 11,
+      "categories": [
+        "reasoning_logic",
+        "code_generation",
+        "creative_writing",
+        "math_calculations",
+        "multi_turn_coherence"
+      ],
+      "observations": {
+        "reasoning": "Model shows step-by-step reasoning in <think> blocks",
+        "code_gen": "Generates well-documented code with type hints",
+        "creativity": "Produces engaging creative content with appropriate structure",
+        "math": "Shows detailed work for mathematical problems",
+        "context": "Successfully maintains conversation context across turns"
+      },
+      "type": "qualitative"
+    },
+    "parameters": {
+      "parameters_tested": 4,
+      "total_experiments": 12,
+      "recommended_settings": {
+        "code_generation": {
+          "temperature": 0.2,
+          "top_p": 0.9
+        },
+        "creative_writing": {
+          "temperature": 0.9,
+          "top_p": 0.95
+        },
+        "factual_qa": {
+          "temperature": 0.1,
+          "top_p": 0.8
+        }
+      },
+      "observations": {
+        "temperature_impact": "Higher temperatures produce more varied outputs across runs",
+        "top_p_impact": "Lower top_p values produce more predictable token selection",
+        "persona_adherence": "Model successfully adopts different communication styles"
+      },
+      "type": "qualitative"
+    },
+    "model_comparison": {
+      "task": "website_generation",
+      "models_compared": 2,
+      "providers": [
+        "OpenAI",
+        "MiniMax"
+      ],
+      "winners": {
+        "fastest": "MiniMax MiniMax-M2.1",
+        "most_output": "MiniMax MiniMax-M2.1",
+        "highest_throughput": "MiniMax MiniMax-M2.1"
+      },
+      "minimax_tokens_per_second": 104.0,
+      "minimax_completion_time": 78.74,
+      "type": "comparison"
+    },
+    "nextjs_comparison": {
+      "task": "nextjs_application_generation",
+      "models_compared": 2,
+      "providers": [
+        "OpenAI",
+        "MiniMax"
+      ],
+      "winners": {
+        "fastest": "OpenAI gpt-4o",
+        "most_output": "MiniMax MiniMax-M2.1",
+        "highest_throughput": "MiniMax MiniMax-M2.1",
+        "most_files": "OpenAI gpt-4o"
+      },
+      "minimax_files_generated": 18,
+      "minimax_lines_of_code": 1680,
+      "minimax_has_typescript": true,
+      "type": "comparison"
+    },
+    "code_correctness": {
+      "pass_rate": 90.0,
+      "avg_score": 95.0,
+      "syntax_valid_rate": 100.0,
+      "by_language": {
+        "python": {
+          "passed": 2,
+          "total": 3,
+          "avg_score": 83.33333333333333
+        },
+        "typescript": {
+          "passed": 3,
+          "total": 3,
+          "avg_score": 100.0
+        },
+        "json": {
+          "passed": 2,
+          "total": 2,
+          "avg_score": 100.0
+        },
+        "sql": {
+          "passed": 2,
+          "total": 2,
+          "avg_score": 100.0
+        }
+      },
+      "total_tests": 10,
+      "type": "quantitative"
+    },
+    "instruction_following": {
+      "pass_rate": 66.66666666666666,
+      "avg_score": 78.33333333333333,
+      "constraint_adherence": 68.42105263157895,
+      "total_tests": 12,
+      "type": "quantitative"
+    },
+    "reasoning_quality": {
+      "accuracy": 40.0,
+      "avg_score": 50.0,
+      "avg_reasoning_steps": 22.0,
+      "self_correction_rate": 50.0,
+      "reasoning_metrics": {
+        "Self-Correction": 5,
+        "Alternatives": 6,
+        "Edge Cases": 4,
+        "Verification": 5
+      },
+      "total_tests": 10,
+      "type": "quantitative"
+    }
+  },
+  "overall": {
+    "composite_score": 74.4,
+    "benchmarks_run": 7,
+    "quantitative_benchmarks": 3,
+    "total_tests": 55
+  }
+}

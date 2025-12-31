@@ -1,0 +1,52 @@
+{
+  "notebook": "04_model_comparison",
+  "timestamp": "2025-12-30T16:58:45.558526",
+  "task": "website_generation",
+  "summary": {
+    "models_compared": 2,
+    "providers": [
+      "OpenAI",
+      "MiniMax"
+    ],
+    "winners": {
+      "fastest": "MiniMax MiniMax-M2.1",
+      "most_output": "MiniMax MiniMax-M2.1",
+      "highest_throughput": "MiniMax MiniMax-M2.1"
+    }
+  },
+  "models": [
+    {
+      "key": "minimax_MiniMax-M2.1",
+      "provider": "MiniMax",
+      "model": "MiniMax-M2.1",
+      "completion_time": 78.74,
+      "prompt_tokens": 446,
+      "completion_tokens": 8192,
+      "total_tokens": 8638,
+      "tokens_per_second": 104.0,
+      "output_chars": 35225
+    },
+    {
+      "key": "openai_gpt-4o",
+      "provider": "OpenAI",
+      "model": "gpt-4o",
+      "completion_time": 115.28,
+      "prompt_tokens": 447,
+      "completion_tokens": 4656,
+      "total_tokens": 5103,
+      "tokens_per_second": 40.4,
+      "output_chars": 15451
+    }
+  ],
+  "minimax_performance": {
+    "key": "minimax_MiniMax-M2.1",
+    "provider": "MiniMax",
+    "model": "MiniMax-M2.1",
+    "completion_time": 78.74,
+    "prompt_tokens": 446,
+    "completion_tokens": 8192,
+    "total_tokens": 8638,
+    "tokens_per_second": 104.0,
+    "output_chars": 35225
+  }
+}

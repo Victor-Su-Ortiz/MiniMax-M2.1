@@ -1,0 +1,89 @@
+{
+  "notebook": "05_nextjs_comparison",
+  "timestamp": "2025-12-30T17:02:07.959088",
+  "task": "nextjs_application_generation",
+  "summary": {
+    "models_compared": 2,
+    "providers": [
+      "OpenAI",
+      "MiniMax"
+    ],
+    "winners": {
+      "fastest": "OpenAI gpt-4o",
+      "most_output": "MiniMax MiniMax-M2.1",
+      "highest_throughput": "MiniMax MiniMax-M2.1",
+      "most_files": "OpenAI gpt-4o"
+    }
+  },
+  "models": [
+    {
+      "key": "minimax_MiniMax-M2.1",
+      "provider": "MiniMax",
+      "model": "MiniMax-M2.1",
+      "completion_time": 143.34,
+      "prompt_tokens": 744,
+      "completion_tokens": 16000,
+      "total_tokens": 16744,
+      "tokens_per_second": 111.6,
+      "output_chars": 54049,
+      "code_analysis": {
+        "lines": 1680,
+        "files_found": 18,
+        "has_typescript": true,
+        "has_app_router": true,
+        "has_react_hooks": true,
+        "has_tailwind": true,
+        "has_context_api": true,
+        "has_type_definitions": true,
+        "has_animations": true,
+        "has_accessibility": false
+      }
+    },
+    {
+      "key": "openai_gpt-4o",
+      "provider": "OpenAI",
+      "model": "gpt-4o",
+      "completion_time": 56.24,
+      "prompt_tokens": 742,
+      "completion_tokens": 2620,
+      "total_tokens": 3362,
+      "tokens_per_second": 46.6,
+      "output_chars": 10437,
+      "code_analysis": {
+        "lines": 394,
+        "files_found": 19,
+        "has_typescript": true,
+        "has_app_router": true,
+        "has_react_hooks": true,
+        "has_tailwind": true,
+        "has_context_api": true,
+        "has_type_definitions": true,
+        "has_animations": true,
+        "has_accessibility": true
+      }
+    }
+  ],
+  "minimax_performance": {
+    "key": "minimax_MiniMax-M2.1",
+    "provider": "MiniMax",
+    "model": "MiniMax-M2.1",
+    "completion_time": 143.34,
+    "prompt_tokens": 744,
+    "completion_tokens": 16000,
+    "total_tokens": 16744,
+    "tokens_per_second": 111.6,
+    "output_chars": 54049,
+    "code_analysis": {
+      "lines": 1680,
+      "files_found": 18,
+      "has_typescript": true,
+      "has_app_router": true,
+      "has_react_hooks": true,
+      "has_tailwind": true,
+      "has_context_api": true,
+      "has_type_definitions": true,
+      "has_animations": true,
+      "has_accessibility": false
+    }
+  }
+}

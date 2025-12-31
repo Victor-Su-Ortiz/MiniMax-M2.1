@@ -1,0 +1,61 @@
+{
+  "notebook": "02_capabilities_test",
+  "timestamp": "2025-12-30T16:53:51.684551",
+  "model": "MiniMax-M2.1",
+  "summary": {
+    "categories_tested": 5,
+    "total_tests": 11,
+    "categories": [
+      "reasoning_logic",
+      "code_generation",
+      "creative_writing",
+      "math_calculations",
+      "multi_turn_coherence"
+    ]
+  },
+  "capabilities": {
+    "reasoning_logic": {
+      "tests": [
+        "river_crossing_puzzle",
+        "syllogism_deduction"
+      ],
+      "description": "Logic puzzles and deductive reasoning"
+    },
+    "code_generation": {
+      "tests": [
+        "binary_search_implementation",
+        "code_explanation"
+      ],
+      "description": "Writing and explaining code"
+    },
+    "creative_writing": {
+      "tests": [
+        "short_story",
+        "haiku"
+      ],
+      "description": "Creative narrative and poetry"
+    },
+    "math_calculations": {
+      "tests": [
+        "word_problem_trains",
+        "algebra_quadratic"
+      ],
+      "description": "Mathematical reasoning and problem solving"
+    },
+    "multi_turn_coherence": {
+      "tests": [
+        "context_retention",
+        "name_recall",
+        "pet_count"
+      ],
+      "description": "Maintaining context across conversation turns"
+    }
+  },
+  "observations": {
+    "reasoning": "Model shows step-by-step reasoning in <think> blocks",
+    "code_gen": "Generates well-documented code with type hints",
+    "creativity": "Produces engaging creative content with appropriate structure",
+    "math": "Shows detailed work for mathematical problems",
+    "context": "Successfully maintains conversation context across turns"
+  }
+}
