@@ -17,8 +17,6 @@ ipykernel>=6.0.0
 ipywidgets>=8.0.0
 
 # Optional: For comparison tables
-pandas>=2.0.0
-
-# Optional: For code quality benchmarks (notebooks 06-08)
+pandas>=2.0.0# Optional: For code quality benchmarks (notebooks 06-08)
 radon>=6.0.1          # Python complexity metrics
 pyflakes>=3.0.0       # Python lint checking
